@@ -15,14 +15,14 @@ module load CUDA/11.8.0
 source activate NLP
 
 python train_table2text_bart.py \
---data_dir="\baselines\" \
+--data_dir=\baselines\ \
 --model_name_or_path=bart-large \
 --learning_rate=3e-5 \
 --num_train_epochs 30 \
 --train_batch_size=8 \
 --eval_batch_size=4 \
 --test_batch_size=4 \
---output_dir="\outputs\bart_outs\" \
+--output_dir=\outputs\bart_outs\ \
 --n_gpu 1 \
 --do_train \
 --do_predict \
