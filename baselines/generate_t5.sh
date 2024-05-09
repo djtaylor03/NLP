@@ -15,7 +15,7 @@ module load CUDA/11.8.0
 source activate NLP
 
 python train_table2text_t5.py \
---data_dir=\baselines\ \
+--data_dir=\baselines \
 --model_name_or_path=t5-base \
 --learning_rate=3e-5 \
 --num_train_epochs 30 \
